@@ -4,100 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Niyo Bootcamps</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-
-        .hero {
-            background: url('hero-image.jpg') no-repeat center center;
-            height: 70vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-
-        .hero-content h1 {
-            font-size: 3rem;
-            margin-bottom: 10px;
-        }
-
-        .hero-content p {
-            font-size: 1.5rem;
-        }
-
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            padding: 20px 0;
-        }
-
-        .story, .mission {
-            padding: 40px 0;
-            background: #f4f4f4;
-            margin: 20px 0;
-        }
-
-        .story h2, .mission h2 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
-        footer.footer {
-            background: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-        }
-
-        .List-of-links{
-          list-style-type: none;
-          padding-left: 0;
-        }
-        .container{
-          display: flex;
-          justify-content: space-between;
-        }
-
-        .container ul {
-          margin: 0 10px; 
-        }
-
-        footer.footer p {
-            margin: 0;
-        }
-    </style>
+    <link rel="stylesheet" href="styleStory.css">
 </head>
-<body>
-    <header class="hero">
-        <div class="hero-content">
-            <h1>Our Story</h1>
-            <p>Empowering women in tech and beyond</p>
+    <body>
+        <div class="banner">
+            <div class="banner-content">
+                <p><strong>We are innovating how learning is done.</strong> <span class="highlight">Sign up for the future of education. 👈</span></p>
+            </div>
         </div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home Community</a></li>
+                <li><a href="#story">Our Story</a></li>
+                <li><a href="#companies">Companies</a></li>
+                <li><a class="whitebutton" href="Join-Niyo-Family.html">Join Niyo Family</a></li>
+                <li><a class="yellowbutton" href="#bootcamps">View Bootcamps</a></li>
+            </ul>
+        </nav>
     </header>
-    <section class="story">
+    <section class="hero">
+        <div class="hero-content">
+        <p>THE STORY OF NIYO BOOTCAMP</p>
+        <h1>Training Ground For People
+            In Tech Globally</h1>
+        <p>“We upskill, we support, we get them
+            employed! - Feel empowered, be empowered”</p>
+    </div>
+    <img src="./img/ourstory.png" alt="grouppic" class="group-pic">
+    
+    </section>
+    <section class="About">
         <div class="container">
+            <div class="about-images">
+                <img src="./img/aboutimg1.png" alt="About 1">
+                <img src="./img/aboutimg2.png" alt="About 2">
+            </div>
+            <div class="about-text">
             <h2>About Us</h2>
             <p>Niyo Bootcamps was founded with the mission to bridge the gender gap in tech. We provide immersive training programs to help women break into the tech industry and achieve their career goals.</p>
+            </div>
         </div>
     </section>
     <section class="mission">
         <div class="container">
-            <h2>Our Mission</h2>
-            <p>Our mission is to empower women by providing them with the skills, confidence, and community support needed to thrive in the tech industry.</p>
+            <div class ="mission-text">
+            <p id="special-text">WHAT WE DO</p>
+            <h2>Upskilling people in Tech</h2>
+            
+        </div>
         </div>
     </section>
     <footer class="footer">
         <div class="container">
             <ul class="List-of-links">
               <li><strong>Bootcamps</strong></li>
-              <li>Technology Bootcamp</li>
+              <li><a href="https://bootcamps.niyo.co/web2-bootcamps">Technology Bootcamp</a></li>
               <li>Hair and Beauty Technology Bootcamp</li>
               <li>Foundhers Bootcamps</li>
               <li>Fashion Technology Bootcamps</li>

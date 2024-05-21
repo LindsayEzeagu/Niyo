@@ -1,0 +1,182 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.banner {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1001; /* Ensures banner stays above the navbar */
+}
+
+.banner-content {
+  max-width: 800px;
+  margin: 0 auto;
+  animation: zoomInOut 4s ease-in-out infinite; /* Animation for zooming text */
+}
+
+.banner-content p {
+  margin: 0;
+}
+
+.highlight {
+  color: #F0BF4C;
+}
+
+@keyframes zoomInOut {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+header {
+  background-color: rgb(244, 244, 244);
+  padding: 10px 0;
+  position: fixed; /* Keeps the header fixed at the top */
+  width: 100%; /* Ensures it takes the full width of the page */
+  top: 60px; /* Adjust this value based on the height of the banner */
+  z-index: 1000; /* Keeps it above other content */
+}
+
+.hero {
+  position: relative; /* Set position to relative */
+  height: auto; /* Make height auto to allow content to determine height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 120px; /* Adjust based on combined height of header and banner */
+  padding: 20px; /* Add padding for spacing */
+}
+
+.hero-content {
+  position: relative; /* Set position to relative */
+  z-index: 1; /* Ensures hero-content stays above the image */
+}
+
+.group-pic {
+  width: 100%;
+  height: auto;
+  margin-top: 20px; /* Adjust based on desired spacing */
+  z-index: 0; /* Ensures image is behind hero-content */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #000000; /* Change text color to white for better visibility on dark background */
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+}
+
+nav ul li a.yellowbutton {
+  background-color: #F0BF4C;
+  border-radius: 5px;
+  color: #FFFFFF;
+  transition: background-color 0.3s;
+}
+
+nav ul li a.whitebutton {
+  background-color: #FFFFFF;
+  border: 2px solid #F0BF4C;
+  color: #F0BF4C;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a.button:hover {
+  background-color: #0056b3;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.About .about-images {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between images */
+}
+
+.About .about-images img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px; /* Optional: adds rounded corners to images */
+}
+
+.About .about-text {
+  flex: 1;
+  padding-left: 20px; /* Space between images and text */
+}
+
+.mission, .mission-text {
+  flex: 1;
+  padding-left: 20px; /* Space between images and text */
+}
+
+.About, .mission {
+  padding: 60px 0;
+  background: #f4f4f4;
+  margin: 20px 0;
+}
+
+#special-text{
+  color:#F0BF4C;
+  font-weight: bold;
+}
+
+.About h2, .mission h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+footer.footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.List-of-links {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container ul {
+  margin: 0 10px;
+}
+
+footer.footer p {
+  margin: 0;
+}
